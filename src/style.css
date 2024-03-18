@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: 500;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+.settings {
+  position: fixed;
+  flex-direction: column;
+  display: flex;
+  row-gap: 10px;
+  top: 0px;
+  right: 0px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.materialSettings {
+  flex-direction: column;
+  display: none;
+  row-gap: 10px;
+  top: 10px;
+  right: 10px;
+  margin-top: 5px;
+}

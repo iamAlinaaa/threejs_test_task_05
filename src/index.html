@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>threejs_test_task_05</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas class="webgl"></canvas>
+    <script type="module" src="./script.js"></script>
+    <div class="settings">
+      <div>
+        <p>Load Model:</p>
+        <input type="file" id="cusomModel" accept=".glb,.gltf,.fbx" />
+      </div>
+
+      <div>
+        <p>Environment map:</p>
+        <input type="file" id="environmentMap" accept=".hdr,.jpg,.jpeg" />
+      </div>
+
+      <div id="materialSettings" class="materialSettings">
+        <div>
+          <p>Color:</p>
+          <input type="color" id="color" />
+        </div>
+
+        <div>
+          <p>Metalness:</p>
+          <input
+            id="metalness"
+            type="range"
+            value="1"
+            min="0"
+            max="1"
+            step="0.01"
+          />
+        </div>
+
+        <div>
+          <p>Opacity:</p>
+          <input
+            id="opacity"
+            type="range"
+            value="1"
+            min="0"
+            max="1"
+            step="0.01"
+          />
+        </div>
+
+        <div>
+          <p>Roughness:</p>
+          <input
+            id="roughness"
+            type="range"
+            value="1"
+            min="0"
+            max="1"
+            step="0.01"
+          />
+        </div>
+
+        <div>
+          <p>Map:</p>
+          <input type="file" id="map" accept=".hdr,.jpg,.jpeg" />
+        </div>
+
+        <div>
+          <p>Normal Map:</p>
+          <input type="file" id="normalMap" accept=".hdr,.jpg,.jpeg" />
+        </div>
+
+        <div>
+          <p>Model Environment Map:</p>
+          <input
+            type="file"
+            id="modelEnvironmentMap"
+            accept=".hdr,.jpg,.jpeg"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
