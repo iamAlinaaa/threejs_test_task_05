@@ -1,1 +1,1 @@
-# threejs_test_task_05
+simpler version of Three.js editor
